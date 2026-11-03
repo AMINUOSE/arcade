@@ -17,7 +17,7 @@
 
 <style>
 	.crossword {
-		--cell-size: clamp(44px, 14vw, 64px);
+		--cell-size: clamp(50px, 14vw, 64px);
 		display: grid;
 		grid-template-columns: repeat(5, var(--cell-size));
 		grid-auto-rows: var(--cell-size);
