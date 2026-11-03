@@ -8,6 +8,7 @@
 	import Button from '#lib/components/Button.svelte';
 	import { game } from '#lib/state/game.svelte.js';
 	import { motion } from '#lib/motion.js';
+	import { swipe } from '#lib/swipe.js';
 
 	const keys = {
 		ArrowLeft: 'left',
@@ -51,7 +52,9 @@
 		<Button onclick={() => game.newGame()}>New game</Button>
 	</div>
 
-	<Board board={game.board} spawnedAt={game.spawnedAt} />
+	<div class="board-area" use:swipe={(direction) => game.play(direction)}>
+		<Board board={game.board} spawnedAt={game.spawnedAt} />
+	</div>
 
 	<div class="message-slot">
 		{#if game.over}
@@ -92,6 +95,11 @@
 		justify-content: space-between;
 		gap: var(--space-3);
 		margin-bottom: var(--space-3);
+	}
+
+	/* Lets a finger drag on the board swipe instead of scrolling the page */
+	.board-area {
+		touch-action: none;
 	}
 
 	.message-slot {
