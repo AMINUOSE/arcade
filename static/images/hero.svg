@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="260" height="260">
+  <rect width="260" height="260" rx="6" fill="#4a1d96"/>
+  <g transform="translate(30 30)">
+    <rect width="200" height="200" fill="#0d0d0d"/>
+    <g fill="#ffffff">
+      <rect x="4" y="4" width="36" height="36"/><rect x="44" y="4" width="36" height="36"/><rect x="84" y="4" width="36" height="36"/><rect x="124" y="4" width="36" height="36"/><rect x="164" y="4" width="32" height="36"/>
+      <rect x="4" y="44" width="36" height="36"/><rect x="84" y="44" width="36" height="36"/><rect x="164" y="44" width="32" height="36"/>
+      <rect x="4" y="84" width="36" height="36"/><rect x="44" y="84" width="36" height="36"/><rect x="84" y="84" width="36" height="36"/><rect x="124" y="84" width="36" height="36"/><rect x="164" y="84" width="32" height="36"/>
+      <rect x="4" y="124" width="36" height="36"/><rect x="84" y="124" width="36" height="36"/><rect x="164" y="124" width="32" height="36"/>
+      <rect x="4" y="164" width="36" height="32"/><rect x="44" y="164" width="36" height="32"/><rect x="84" y="164" width="36" height="32"/><rect x="124" y="164" width="36" height="32"/><rect x="164" y="164" width="32" height="32"/>
+    </g>
+    <g fill="#0d0d0d" font-family="system-ui, sans-serif" font-size="22" font-weight="800" text-anchor="middle">
+      <text x="22" y="30">C</text><text x="62" y="30">L</text><text x="102" y="30">A</text><text x="142" y="30">S</text><text x="180" y="30">S</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,87 @@
+/* Design tokens: color ramp, type scale, spacing scale, and 2048 tile colors */
+
+:root {
+	/* Neutral ramp (warm grey, no tint) */
+	--color-ink: #151413;
+	--color-muted: #5b5853;
+	--color-line: #dedbd5;
+	--color-paper-alt: #f4f2ee;
+	--color-paper: #ffffff;
+	--color-page: #faf9f6;
+
+	/* Single accent (deep purple) */
+	--color-accent: #4a1d96;
+	--color-accent-dark: #2f1066;
+
+	/* Crossword colors */
+	--color-block: #151413;
+	--color-correct: #c4f0cf;
+	--color-wrong: #ffd1d1;
+
+	/* Semantic colors */
+	--color-bg: var(--color-page);
+	--color-surface: var(--color-paper);
+	--color-text: var(--color-ink);
+	--color-text-muted: var(--color-muted);
+	--color-border: var(--color-line);
+	--color-on-accent: var(--color-paper);
+
+	/* Type scale */
+	--font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.25rem;
+	--text-xl: 1.625rem;
+	--text-2xl: 2.25rem;
+	--text-display: clamp(2.5rem, 9vw, 4.5rem);
+
+	/* Spacing scale */
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 1rem;
+	--space-4: 1.5rem;
+	--space-5: 2.5rem;
+	--space-6: 4rem;
+
+	/* Shape and misc */
+	--radius: 0.75rem;
+	--radius-lg: 1.25rem;
+	--radius-pill: 999px;
+	--content-width: 64rem;
+	--reading-width: 65ch;
+	--tap-target: 44px;
+	--transition: 150ms ease-in-out;
+
+	/*
+	 * 2048 tiles: one purple hue (265) that gets darker as the value grows.
+	 * Every text color against its background is at least 4.5:1.
+	 * Tiles get a 2px ink border (like cards), so they stand out from the board.
+	 */
+	--board-bg: var(--color-paper-alt);
+	--tile-empty: var(--color-line);
+
+	--tile-2-bg: #f1eafa;
+	--tile-2-text: var(--color-ink);
+	--tile-4-bg: #e0d2f4;
+	--tile-4-text: var(--color-ink);
+	--tile-8-bg: #ccb5ee;
+	--tile-8-text: var(--color-ink);
+	--tile-16-bg: #b694e6;
+	--tile-16-text: var(--color-ink);
+	--tile-32-bg: #9f73de;
+	--tile-32-text: var(--color-ink);
+	--tile-64-bg: #8951d6;
+	--tile-64-text: var(--color-paper);
+	--tile-128-bg: #7230cf;
+	--tile-128-text: var(--color-paper);
+	--tile-256-bg: #6029ae;
+	--tile-256-text: var(--color-paper);
+	--tile-512-bg: #4e218c;
+	--tile-512-text: var(--color-paper);
+	--tile-1024-bg: #3b196b;
+	--tile-1024-text: var(--color-paper);
+	--tile-2048-bg: #2b124e;
+	--tile-2048-text: var(--color-paper);
+	--tile-super-bg: #1b0c32;
+	--tile-super-text: var(--color-paper);
+}
